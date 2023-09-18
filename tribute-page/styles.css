@@ -1,0 +1,93 @@
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+
+    @media only screen and (max-width: 600px) {
+        font-size: 40%;
+    }
+
+}
+
+body {
+    font-family: "Open Sans", sans-serif;
+}
+
+#main {
+    margin: 3rem auto;
+    text-align: center;
+    padding: 3rem;
+    background-color: #eee;
+    max-width: 150rem;
+}
+
+#title {
+    font-size: 4rem;
+    font-weight: 700;
+    margin: 3rem;
+}
+#img-div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    padding: 3rem;
+}
+
+#image {
+    display: block;
+    max-width: 100%;
+
+}
+
+#img-caption {
+    margin-top:  2rem;
+    font-size: 1.6rem;
+    font-weight: 400;
+}
+
+
+#tribute-info {
+    margin-top: 2rem;
+}
+
+#tribute-info  h2 {
+    font-size: 2rem;
+}
+
+
+#tribute-info  ul {
+    font-size: 1.6rem;
+    line-height: 3rem;
+    text-align: left;
+    margin: 2rem auto;
+    max-width: 55rem;
+    
+    @media only screen and (max-width: 600px) {
+        padding: 3rem;
+    }
+}
+
+span {
+    font-weight: 700;
+}
+
+#tribute-info  ul > li {
+    margin-top: 1rem;
+}
+
+#tribute-more-info {
+    font-size: 1.6rem;
+}
+
+#tribute-more-info  span {
+    font-size: 2rem;
+}
