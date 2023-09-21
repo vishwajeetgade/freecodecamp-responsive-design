@@ -1,0 +1,121 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+@media only screen and (max-width: 800px) {
+  html {
+    font-size: 45%;
+  }
+}
+
+body {
+  color: #686868;
+}
+
+#navbar {
+  font-size: 2rem;
+  width: 35rem;
+  border-right: 2px solid #505050;
+  height: 100%;
+  position: fixed;
+}
+
+@media only screen and (max-width: 600px) {
+  #navbar {
+    display: none;
+  }
+}
+
+#navbar header {
+  color: #2b2b2b;
+  font-size: 3rem;
+  font-weight: bold;
+  text-align: center;
+  padding: 2rem 2rem 2rem 2rem;
+}
+
+#navbar ul {
+  list-style: none;
+  height: 100%;
+}
+
+#navbar li {
+  border-top: 1px solid #505050;
+  padding: 1rem 3rem;
+  font-size: 2rem;
+}
+
+.nav-link {
+  text-decoration: none;
+}
+
+.nav-link:link,
+.nav-link:visited {
+  color: inherit;
+}
+
+#main-doc {
+  padding: 4rem;
+  width: 75%;
+  position: absolute;
+  left: 35rem;
+}
+
+@media only screen and (max-width: 800px) {
+  #main-doc {
+    padding: 1rem 2rem;
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+    #main-doc {
+      position: relative;
+      left: 0;
+    }
+  }
+#main-doc header {
+  color: #2b2b2b;
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+.main-section {
+    margin-bottom: 2rem;
+}
+
+p {
+  font-size: 2rem;
+  margin-top: 2rem;
+  line-height: 1;
+  padding: 0 2rem;
+}
+
+.main-section li {
+  font-size: 2rem;
+  margin: 2rem 4rem;
+  line-height: 1;
+}
+
+code {
+    font-size: 1.5rem;
+    line-height: 1.5;
+    background-color: #eee;
+    white-space: pre-line;
+    word-break: normal;
+    word-wrap: normal;
+    display: block;
+    padding: 1.5rem;
+    margin: 1.5rem 0;
+    border-radius: 10px;
+}
