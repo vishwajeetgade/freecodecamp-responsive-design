@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Anime Landing Page</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body class="container">
+    <header id="header">
+      <div class="header__img">
+        <img
+        src="https://cdn.freecodecamp.org/testable-projects-fcc/images/product-landing-page-logo.png"
+        alt="original trombones logo"
+        id="header-img"
+      />
+      </div>
+      
+      <nav id="nav-bar">
+        <ul>
+          <li><a href="#how-it-works" class="nav-link">How it works</a></li>
+          <li><a href="#gallery" class="nav-link">Gallery</a></li>
+          <li><a href="#contact-us" class="nav-link">Contact us</a></li>
+        </ul>
+      </nav>
+    </header>
+    <section id="how-it-works">
+      <iframe
+        src="https://www.youtube-nocookie.com/embed/y8Yv4pnO7qc?rel=0&controls=0&showinfo=0"
+        frameborder="0"
+        id="video"
+        allowfullscreen
+      ></iframe>
+    </section>
+    <section id="gallery"></section>
+    <section id="contact-us">
+      <form action="https://www.freecodecamp.com/email-submit" id="form">
+        <h2>To Know more contact us</h2>
+        <input type="email" name="email" id="email" placeholder="Enter your email" required />
+        <input type="submit" id="submit" value="Submit" required />
+      </form>
+    </section>
+  </body>
+</html>
