@@ -1,0 +1,264 @@
+:root {
+  --main-white: #f0f0f0;
+  --main-red: #be3144;
+  --main-blue: #45567d;
+  --main-gray: #303841;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+@media only screen and (max-width: 37.5em) {
+  html {
+    font-size: 50%;
+  }
+}
+@media only screen and (max-width: 30em) {
+  html {
+    font-size: 40%;
+  }
+}
+
+body {
+  font-family: sans-serif;
+  position: relative;
+  height: 200vh;
+}
+
+/* custom scroll bar */
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: var(--main-white);
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+.container {
+  max-width: 130rem;
+  height: 100%;
+  margin: 0 auto;
+}
+
+#navbar {
+  position: fixed;
+  background-color: var(--main-red);
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 10;
+}
+
+@media only screen and (max-width: 81.25em) {
+  #navbar {
+    padding: 0 2rem;
+  }
+}
+
+#navbar ul {
+  list-style: none;
+  font-size: 2.2rem;
+  height: 100%;
+  padding: 1.5rem;
+
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 4rem;
+}
+
+#navbar ul li {
+  text-decoration: none;
+}
+
+.nav-link:link,
+.nav-link:visited {
+  color: var(--main-white);
+  text-decoration: none;
+}
+
+.header {
+  background-color: var(--main-gray);
+  height: 100vh;
+}
+
+.header .container {
+  position: relative;
+  top: calc(50% - 6rem);
+  height: auto;
+  text-align: center;
+  color: var(--main-white);
+}
+
+@media only screen and (max-width: 81.25em) {
+  .header .container {
+    padding: 0 3rem;
+  }
+}
+
+.header h1 {
+  font-size: 6rem;
+  margin-bottom: 2rem;
+}
+
+.designation {
+  display: flex;
+  justify-content: center;
+  font-size: 1.8rem;
+}
+
+.designation h3 {
+  font-weight: 500;
+  letter-spacing: 0.3rem;
+  padding: 1rem;
+  color: var(--main-red);
+}
+
+.designation h3:nth-of-type(2) {
+  border-left: 2px solid var(--main-white);
+  border-right: 2px solid var(--main-white);
+}
+
+#projects {
+  width: 100%;
+  text-align: center;
+  background-color: var(--main-blue);
+  color: var(--main-white);
+  min-height: 100vh;
+}
+
+#projects h2 {
+  font-size: 4rem;
+  border-bottom: 2px solid var(--main-white);
+  display: inline-block;
+  margin: 7rem auto;
+  padding: 1rem 0;
+}
+
+@media only screen and (max-width: 37.5em) {
+  #projects h2 {
+    padding: 1rem 1rem;
+    font-size: 3.5rem;
+  }
+  
+}
+
+#projects .project-list {
+  padding: 3rem;
+  max-width: 130rem;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+  grid-gap: 4rem;
+  align-items: start;
+}
+
+.card {
+  background-color: #f0f0f0;
+  cursor: pointer;
+}
+
+.card--img {
+  width: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.card--title {
+  background-color: var(--main-gray);
+  font-size: 2rem;
+  letter-spacing: 0.2rem;
+  padding: 2rem;
+}
+
+.card--title > span {
+  color: transparent;
+  transition: all 0.5s;
+}
+
+.card--title:hover > span {
+  color: orange;
+  display: inline-block;
+}
+
+.footer {
+  background-color: var(--main-gray);
+  text-align: center;
+  padding: 5rem;
+  color: #fff;
+}
+
+.footer h2 {
+  font-size: 5rem;
+  margin-bottom: 1.5rem;
+}
+
+@media only screen and (max-width: 30em) {
+  .footer h2 {
+    font-size: 4rem;
+  }
+}
+
+.footer p {
+  font-size: 1.8rem;
+  font-weight: 200;
+  letter-spacing: 1.2px;
+  margin-bottom: 3rem;
+}
+
+.footer-end {
+  padding-top: 2rem;
+  border-top: 2px solid var(--main-red);
+}
+
+.footer-end p {
+  font-size: 1.4rem;
+}
+
+.contact {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 5rem;
+  margin-bottom: 4rem;
+  position: relative;
+}
+
+.contact-link:link,
+.contact-link:visited {
+  color: var(--main-white);
+  text-decoration: none;
+  font-size: 2rem;
+}
+
+.contact li{
+  padding: 2rem;
+  transition: all .2s;
+}
+
+.contact li:hover {
+  transform: translateY(10px);
+}
